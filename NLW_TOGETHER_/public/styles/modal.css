@@ -1,0 +1,89 @@
+.modal-wrapper.active{
+ visibility: visible;
+ opacity: 1;
+}
+
+.modal-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(4,9,17,.8);
+
+    display: flex;
+
+    visibility: hidden;  /*  se um navegador não aceita um vai aceita o outro*/
+    opacity: 0; 
+
+}
+.modal-wrapper .modal{
+    width: min(59rem, 90%);
+    padding:  6.4rem 8.6rem;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    border-radius: .8rem;
+    font-family: 'Poppins', sans-serif;
+
+    margin: auto;
+   
+
+} 
+.modal-wrapper .modal h2{
+    color: var(--black);
+    /* font-family: 'Poppins', sans-serif;   lembrar da herença no css da arvore de documento*/
+
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+.modal-wrapper .modal > p {
+  color: var(--grey-dark);
+  font-weight: 400;
+}
+.modal-wrapper .modal input{
+    border: 2px solid var(--blue);
+    border-radius: .8rem;
+    outline: none;
+   
+    width: 30.2rem;
+    padding: 1.3rem 1.6rem;
+
+    margin-top: 2.4rem;
+    margin-bottom: 4.0rem;
+}
+.modal-wrapper .modal input::placeholder{
+    color: var(--grey-dark);
+    font-weight: 400;
+   
+}
+
+
+.modal-wrapper .modal form{
+    text-align: center;
+}
+
+.modal-wrapper .modal form .buttons{
+    display: flex;
+}
+
+.modal-wrapper .modal form .buttons > button,
+.modal-wrapper .modal .buttons > .button{
+    padding: 1.3rem 3.2rem;    
+}
+.modal-wrapper .modal form .buttons > button{
+    margin-left: .8rem;
+}
+
+
+/* .modal-wrapper .modal form .buttons .button{
+   padding: 1.3rem 3.2rem;                         repetindo pad pro dois é so usar virgula e lembrar que o seletor combinador pega filhos de classe
+}
+.modal-wrapper .modal form .buttons > button{
+    padding: 1.3rem 3.2rem;
+    margin-left: .8rem;
+} */
+
